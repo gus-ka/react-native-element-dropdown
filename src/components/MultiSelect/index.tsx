@@ -687,7 +687,7 @@ const MultiSelectComponent: <T>(
                     e,
                     itemAccessibilityLabelField || labelField
                   )}
-                  key={_.get(e, labelField)}
+                  key={_.get(e, valueField)}
                   onPress={() => unSelect(e)}
                 >
                   {renderSelectedItem(e, () => {
@@ -704,7 +704,7 @@ const MultiSelectComponent: <T>(
                     e,
                     itemAccessibilityLabelField || labelField
                   )}
-                  key={_.get(e, labelField)}
+                  key={_.get(e, valueField)}
                   onPress={() => unSelect(e)}
                 >
                   <View
