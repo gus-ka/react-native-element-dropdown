@@ -174,7 +174,7 @@ const MultiSelectComponent: <T>(
     }, [value]);
 
     const _measure = useCallback(
-      (calledFrom?) => {
+      (calledFrom?: any) => {
         if (ref && ref?.current) {
           ref.current.measureInWindow((pageX, pageY, width, height) => {
             const isFull = isTablet
